@@ -12,7 +12,10 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #Eazy Level - Order not randomised:
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 
+# need to create for loop to run through each list ie(letters, numbers,symbol) up to the number user choses
 for letter in range(0,nr_letters):
+  # need to create a function to pick a random list item at each instance
+  # I refered to askpython random function documentation(https://www.askpython.com/python-modules/python-random-module-generate-random-numbers-sequences)
   l = random.sample(letters,nr_letters)
 
 

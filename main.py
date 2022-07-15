@@ -18,26 +18,22 @@ for letter in range(0,nr_letters):
   # I refered to askpython random function documentation(https://www.askpython.com/python-modules/python-random-module-generate-random-numbers-sequences)
   l = random.sample(letters,nr_letters)
 
-
-
 for number in range(0,nr_numbers):
   n = random.sample(numbers,nr_numbers)
-
-
 
 for symbol in range(0,nr_symbols):
   s = random.sample(symbols,nr_symbols)
 
-password = l+s+n
+password = l+s+n # variable to concatenate lists
 
-simple_pass = ''.join(password)
+simple_pass = ''.join(password) # join function combines each list item
 print(f"Your genereated password is: {simple_pass}")
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 
 #random shuffle function to shuffle list items
-random.shuffle(password)
+random.shuffle(password) #used this shuffle function to completely randomize order of items in password variable
 
 #print and join function
 hard_pass = ''.join(password)

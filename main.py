@@ -27,7 +27,7 @@ for symbol in range(0,nr_symbols):
 password = l+s+n # variable to concatenate lists
 
 simple_pass = ''.join(password) # join function combines each list item
-print(f"Your genereated password is: {simple_pass}")
+print(f"Your simple genereated password is: {simple_pass}")
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P

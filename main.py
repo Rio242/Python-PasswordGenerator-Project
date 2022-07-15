@@ -28,12 +28,18 @@ for number in range(0,nr_numbers):
 for symbol in range(0,nr_symbols):
   s = random.sample(symbols,nr_symbols)
 
+password = l+s+n
 
-
-
-password = [l,n,s]
-
-print(password)
+simple_pass = ''.join(password)
+print(f"Your genereated password is: {simple_pass}")
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+
+#random shuffle function to shuffle list items
+random.shuffle(password)
+
+#print and join function
+hard_pass = ''.join(password)
+print(f"Your completely randomized genereated password is: {hard_pass}")
+
